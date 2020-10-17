@@ -1,0 +1,55 @@
+<section class="form-Registro">
+    <h1 align="center">Registro de Personas</h1>      
+<section class="form-Registro1">
+    <div class="form-group">
+        <label>Identificacion</label>
+        <input class="controls" type="text"  name="identificacion"  [(ngModel)]="persona.identificacion" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Nombres</label>
+        <input class="controls" type="text"  name="nombres"  [(ngModel)]="persona.nombres" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Apellidos</label>
+        <input class="controls" type="text"  name="apellidos"  [(ngModel)]="persona.apellidos" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>sexo</label>
+        <input class="controls" type="text"  name="sexo"  [(ngModel)]="persona.sexo" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Edad</label>
+        <input class="controls" type="number"  name="edad"  [(ngModel)]="persona.edad" class="form-control" />
+    </div>
+</section>
+
+<section class="form-Registro2">
+    <div class="form-group">
+        <label>Departamento</label>
+        <input class="controls" type="string"  name="departamento"  [(ngModel)]="persona.departamento" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Ciudad</label>
+        <input class="controls" type="string"  name="ciudad"  [(ngModel)]="persona.ciudad" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Valor apoyo</label>
+        <input class="controls" type="number"  name="valorApoyo"  [(ngModel)]="persona.valorApoyo" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Modalidad</label>
+        <input class="controls" type="string"  name="modalidad"  [(ngModel)]="persona.modalidad" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Fecha</label>
+        <input class="controls"  type="Date"  name="fecha"  [(ngModel)]="persona.fecha" class="form-control" />
+    </div>
+</section>
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-lg btn-block"(click)="add()">Register</button>
+                            <button class="btn btn-secondary btn-lg btn-block" type="reset">Cancel</button>
+                        </div>
+
+</section>
+
+    

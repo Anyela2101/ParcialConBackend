@@ -1,0 +1,49 @@
+<div class="row">
+        <div class="col-6">
+          <input [(ngModel)]="searchText" type="text" class="form-control" placeholder="Type to filter">
+        </div>
+</div>
+      <hr>
+
+    <div id="TablaContainer">
+         <table class="table table-striped" *ngIf='personas && personas.length'>
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">identificación</th>
+                        <th scope="col">Nombres </th>
+                        <th scope="col">Apellidos </th>
+                        <th scope="col">Sexo</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Departamento</th>
+                        <th scope="col">Ciudad</th>
+                        <th scope="col">Valor-Apoyo</th>
+                        <th scope="col">Modalidad</th>
+                        <th scope="col">Fechas</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let persona of personas; index as i ">
+                        <th scope="row">{{ i + 1 }}</th>
+                        <td>{{ persona.identificacion }} </td>
+                        <td>{{ persona.nombres }}</td>
+                        <td>{{ persona.apellidos }}</td>
+                        <td>{{persona.sexo  }}</td>
+                        <td>{{ persona.edad  }}</td>
+                        <td>{{ persona.departamento}}</td>
+                        <td>{{ persona.ciudad}}</td>
+                        <td>{{ persona.valorApoyo}}</td>
+                        <td>{{ persona.modalidad}}</td>
+                        <td>{{ persona.fecha}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 
+    </div>
+      
+               <div class="form-group">
+                  <label>Total</label>
+                  <input type="number"  name="total" [(ngModel)]="personaTotal"  class="form-control" placeholder="calcular"/>
+             </div>
+
+    

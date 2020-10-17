@@ -1,0 +1,31 @@
+.form-Registro{
+    width: 1200px;
+    background:  #7da3f5;
+    padding: 60px;
+    margin: auto;
+    margin-top:-5px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-Registro h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.form-Registro1{
+    width:500px;
+   border: 1px solid white;
+   left:1000px;
+}
+.form-Registro2{
+    width:500px;
+    border: 1px solid white;
+    float: right;
+    margin-top: -429px;
+    margin-left: 1000px;
+    
+}
